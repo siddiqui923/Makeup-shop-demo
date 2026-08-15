@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Glow & Grace Makeup Studio — Demo</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff8fb;color:#402b34;font-family:Arial,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#fffafdf2;border-bottom:1px solid #efbfd1;padding:14px 6%;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(8px)}
+.logo{font:700 24px Georgia;color:#b83f70}nav a{margin-left:16px;color:#623e4d;text-decoration:none;font-size:14px}.demo{background:#b83f70;color:#fff;text-align:center;padding:7px;font-size:12px;font-weight:bold;letter-spacing:1px}
+.hero{text-align:center;padding:90px 20px;min-height:62vh;display:grid;place-items:center;background:radial-gradient(circle,#ffd8e7,#fff8fb 58%,#fff)}
+.hero h1{font:700 clamp(45px,9vw,80px) Georgia;color:#b83f70;margin:12px 0}.hero p{max-width:650px;color:#765765;margin:0 auto 28px}
+.btn{display:inline-block;background:#d85b8a;color:#fff;text-decoration:none;border:0;border-radius:30px;padding:13px 24px;font-weight:bold;cursor:pointer}.outline{background:#fff;color:#b83f70;border:1px solid #efbfd1;margin-left:8px}
+section{padding:65px 6%}.title{text-align:center;font:700 36px Georgia;color:#b83f70;margin:0 0 8px}.sub{text-align:center;color:#80626d;margin:0 auto 32px}
+.cards{max-width:1050px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}.card{background:#fff;border:1px solid #efbfd1;border-radius:20px;padding:28px;text-align:center;box-shadow:0 10px 25px #b83f7015}.icon{font-size:40px}.card h3{font:22px Georgia;margin:10px}.price{font-size:27px;font-weight:bold;color:#b83f70}
+.gallery{max-width:950px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.pic{height:170px;border-radius:18px;display:grid;place-items:center;font-size:42px;background:linear-gradient(135deg,#ffdce9,#f2abc6,#fff);border:1px solid #efbfd1}
+.booking{max-width:650px;margin:auto;background:#fff;border:1px solid #efbfd1;border-radius:20px;padding:28px;box-shadow:0 10px 30px #b83f7015}label{display:block;font-weight:bold;margin:13px 0 6px}input,select{width:100%;padding:13px;border:1px solid #e2b5c7;border-radius:10px;background:#fffafb;color:#402b34}button{width:100%;margin-top:20px}.note{font-size:13px;color:#80626d;background:#fff0f6;padding:12px;border-radius:10px;margin-top:15px}.contact{text-align:center;background:#ffedf5}footer{text-align:center;background:#fff;border-top:1px solid #efbfd1;padding:28px;color:#80626d}
+@media(max-width:650px){nav{display:none}.gallery{grid-template-columns:1fr 1fr}.pic{height:130px}}
+</style>
+</head>
+<body>
+<div class="demo">DEMO WEBSITE — SAMPLE FOR CLIENT PRESENTATION</div>
+<header><div class="logo">♡ Glow & Grace</div><nav><a href="#home">Home</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#booking">Booking</a></nav></header>
+
+<section class="hero" id="home"><div>
+<div style="color:#b83f70;font-weight:bold;letter-spacing:4px;font-size:12px">BEAUTY • ELEGANCE • CONFIDENCE</div>
+<h1>Glow & Grace<br>Makeup Studio</h1>
+<p>A premium demo website for a modern makeup studio. Customers can view services and request an appointment online.</p>
+<a class="btn" href="#booking">♡ Book Appointment</a><a class="btn outline" href="#services">View Services</a>
+</div></section>
+
+<section id="services"><h2 class="title">Our Services</h2><p class="sub">Sample pricing — fully customizable for your client</p>
+<div class="cards">
+<div class="card"><div class="icon">👰</div><h3>Bridal Makeup</h3><p>Complete bridal glam for your special day.</p><div class="price">₹4,000</div></div>
+<div class="card"><div class="icon">💍</div><h3>Engagement Makeup</h3><p>Elegant look for your engagement ceremony.</p><div class="price">₹3,500</div></div>
+<div class="card"><div class="icon">✨</div><h3>Party Makeup</h3><p>Glamorous makeup for parties and events.</p><div class="price">₹1,500</div></div>
+</div></section>
+
+<section id="gallery"><h2 class="title">Beauty Gallery</h2><p class="sub">Demo placeholders — replace with client's authorized photos</p>
+<div class="gallery"><div class="pic">💄</div><div class="pic">🌸</div><div class="pic">✨</div><div class="pic">👑</div><div class="pic">💋</div><div class="pic">♡</div></div></section>
+
+<section id="booking"><h2 class="title">Online Booking</h2><p class="sub">Booking details will be sent to WhatsApp 9027709183.</p>
+<div class="booking">
+<form id="form">
+<label for="name">Name</label><input id="name" required placeholder="Customer name">
+<label for="mobile">Mobile</label><input id="mobile" required type="tel" inputmode="tel" placeholder="Mobile number">
+<label for="service">Service</label><select id="service" required><option value="">Select service</option><option>Bridal Makeup - ₹4,000</option><option>Engagement Makeup - ₹3,500</option><option>Party Makeup - ₹1,500</option></select>
+<label for="date">Date</label><input id="date" required type="date">
+<label for="time">Time</label><input id="time" required type="time">
+<button class="btn" type="submit">♡ Send Booking on WhatsApp</button>
+</form>
+<div class="note"><strong>How it works:</strong> Customer fills the form → WhatsApp opens → booking message is prepared → customer taps Send.</div>
+</div></section>
+
+<section class="contact"><h2 class="title">Contact</h2><p>Demo WhatsApp: <strong>9027709183</strong></p><a class="btn" href="https://wa.me/919027709183" target="_blank" rel="noopener">Chat on WhatsApp</a></section>
+<footer>Glow & Grace Makeup Studio — DEMO TEMPLATE<br><small>© 2026 Sample Website</small></footer>
+
+<script>
+document.getElementById("form").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("name").value.trim();
+ const mobile=document.getElementById("mobile").value.trim();
+ const service=document.getElementById("service").value;
+ const date=document.getElementById("date").value;
+ const time=document.getElementById("time").value;
+ const message =
+ "Hello Glow & Grace Makeup Studio!\n\n"+
+ "I want to book an appointment.\n\n"+
+ "Name: "+name+"\n"+
+ "Mobile: "+mobile+"\n"+
+ "Service: "+service+"\n"+
+ "Date: "+date+"\n"+
+ "Time: "+time;
+ const url="https://wa.me/919027709183?text="+encodeURIComponent(message);
+ window.open(url,"_blank","noopener");
+});
+</script>
+</body>
+</html>
